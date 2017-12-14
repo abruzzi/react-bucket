@@ -209,7 +209,7 @@ module.exports = {
       sourceMap: false
     }),
     new HtmlwebpackPlugin({
-      title: 'HNA logistics platform',
+      title: 'React Bucket',
       template: 'app/index.html',
       chunks: ['vendor', 'main', 'ie.shim'],
       chunksSortMode: function (a, b) {

@@ -158,7 +158,7 @@ module.exports = {
     }),
     new ExtractTextPlugin('[name].[contenthash].css'),
     new HtmlwebpackPlugin({
-      title: 'HNA logistics platform',
+      title: 'React Bucket',
       template: 'app/index.html',
       chunks: ['vendor', 'main']
     }),
