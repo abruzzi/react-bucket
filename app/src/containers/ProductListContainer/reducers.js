@@ -1,7 +1,7 @@
 import * as types from '../../constants'
 
 export const initialState = {
-  orders: {},
+  products: [],
   error: null,
   success: null,
   failed: null
