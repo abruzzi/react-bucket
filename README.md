@@ -1,4 +1,4 @@
-# HNA logistics
+# React Bucket
 
 ## Installation
 
@@ -7,6 +7,13 @@ Run the following commands to start the server
 ```sh
 npm install
 npm start
+```
+
+If you want to work in the local environment
+
+```sh
+$ #start mock server on 8080 first
+$ npm start:mock
 ```
 
 The server is listening at ```http://localhost:1337```
