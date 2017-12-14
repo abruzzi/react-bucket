@@ -9,6 +9,11 @@ import { getStoreInstance, history } from './store'
 import '../styles/antd.less'
 import '../styles/index.scss'
 
+import 'assets/fonts/font_zck90zmlh7hf47vi.eot' // eslint-disable-line
+import 'assets/fonts/font_zck90zmlh7hf47vi.svg' // eslint-disable-line
+import 'assets/fonts/font_zck90zmlh7hf47vi.ttf' // eslint-disable-line
+import 'assets/fonts/font_zck90zmlh7hf47vi.woff' // eslint-disable-line
+
 const isProduction = process.env.NODE_ENV === 'production'
 const store = getStoreInstance()
 

@@ -145,6 +145,7 @@ module.exports = {
       actions: path.resolve(ROOT_PATH, 'app/src/actions'),
       constants: path.resolve(ROOT_PATH, 'app/src/constants'),
       utils: path.resolve(ROOT_PATH, 'app/src/utils'),
+      assets: path.resolve(ROOT_PATH, 'app/assets'),
       styles: path.resolve(ROOT_PATH, 'app/styles')
     },
     modules: [

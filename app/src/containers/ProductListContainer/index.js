@@ -1,8 +1,10 @@
 import React, {Component, PropTypes} from 'react'
 import {connect} from 'react-redux'
 import cssModules from 'react-css-modules'
-
+import currencyFormatter from 'currency-formatter'
 import {Table} from 'antd'
+
+import {map} from 'lodash'
 
 import { getProducts } from 'actions'
 
@@ -16,7 +18,7 @@ const mapStateToProps = state => ({
 class ProductListContainer extends Component {
   static propTypes = {
     getProducts: PropTypes.func.isRequired,
-    products: PropTypes.object
+    products: PropTypes.array
   }
 
   state = {
@@ -45,7 +47,12 @@ class ProductListContainer extends Component {
       key: 'date',
     }];
 
-    return <Table dataSource={products} columns={columns} />
+    const data = map(products, (product) => {
+      const currency = currencyFormatter.format(product.price, { code: 'CNY' })
+      return {price: currency, name: product.name, date: product.date}
+    })
+
+    return <Table dataSource={data} columns={columns} />
   }
 
   render() {
