@@ -1,4 +1,4 @@
-import {AppContainer} from 'containers'
+import AppContainer from './containers/AppContainer'
 
 const errorLoading = _ => _ // console.error('Dynamic loading failed' + err)
 

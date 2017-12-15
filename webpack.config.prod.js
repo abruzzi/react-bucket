@@ -5,7 +5,6 @@ const HtmlwebpackPlugin = require('html-webpack-plugin')
 const OfflinePlugin = require('offline-plugin')
 const autoprefixer = require('autoprefixer')
 const rucksack = require('rucksack-css')
-const precss = require('precss')
 const ManifestPlugin = require('webpack-manifest-plugin')
 
 const ROOT_PATH = path.resolve(__dirname)

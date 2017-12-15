@@ -4,11 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlwebpackPlugin = require('html-webpack-plugin')
 const autoprefixer = require('autoprefixer')
 const rucksack = require('rucksack-css')
-const precss = require('precss')
-
 const ROOT_PATH = path.resolve(__dirname)
-
-const packageConfig = require('./package.json')
 
 module.exports = {
   devtool: 'inline-source-map',
